@@ -29,13 +29,24 @@ export function ContactSection() {
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="font-medium">{t('contact.location.address.name')}</p>
-                    <p className="text-gray-600">{t('contact.location.address.street')}</p>
-                    <p className="text-gray-600">{t('contact.location.address.city')}</p>
-                    <p className="text-gray-600">{t('contact.location.address.country')}</p>
+                    <p className="font-medium">London House Exchange</p>
+                    <p className="text-gray-600">No. 1 Royal Exchange</p>
+                    <p className="text-gray-600">London EC3V 3DG</p>
+                    <p className="text-gray-600">United Kingdom</p>
                   </div>
                 </div>
-                {/* ... rest of contact info ... */}
+                <div className="flex items-center space-x-4">
+                  <Mail className="h-6 w-6 text-green-600" />
+                  <a href="mailto:contact@fidus.group" className="text-gray-600 hover:text-green-600">
+                    contact@fidus.group
+                  </a>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <ExternalLink className="h-6 w-6 text-green-600" />
+                  <a href="https://www.fidus.group" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-green-600">
+                    www.fidus.group
+                  </a>
+                </div>
               </div>
             </div>
           </div>
